@@ -16,6 +16,7 @@ def replace_with_remote_url(local_path):
     return '![]({})'.format(REMOTE_PREFIX + local_path)
 
 def main():
+    lg.info('usage: python sync.py you_markdown_file.md')
     assert(len(sys.argv) == 2)
     m_file = sys.argv[1]
     print('processing {}'.format(m_file))
