@@ -8,6 +8,6 @@
 3. 脚本sync.py中, 将**GIT_ROOT**修改为你2中pics目录, **REMOTE_PREFIX**中的**lyyiangang**改为你的用户名, **pics**改为你仓库的名字.
 4. 使用下列命令同步图片到gitee.
    ```bash
-    python sync.py demo.md
+    python sync_md.py demo.md
    ```
-   同步完成后会在/tmp/目录下创建一个tmp.md文件, 这个文件中引用的图片就从本地文件转换为远程Gitee上的图片了. 
+   同步完成后会在/tmp/目录下创建一个tmp.md文件, 这个文件中引用的图片就从本地文件转换为远程Gitee上的图片了. 为了方便, 可以将sync_md.py 复制到/usr/bin, 并修改权限```chmod a+x sync_md.py```
